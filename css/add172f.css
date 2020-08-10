@@ -1,0 +1,527 @@
+
+
+.window_status_buttons_single {
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #F1F1F1;
+}
+.window_status_buttons_single > *:first-of-type {
+    color: #7A7A7A;
+}
+.window_status_buttons_single > * {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #F1F1F1;
+    background: white;
+    cursor: pointer;
+    align-items: center;
+}
+
+
+.text-success {
+    color: #5EB76E!important;
+}
+.text-danger, .text-error {
+    color: #D4594C!important;
+}
+
+
+#dice_play[disabled] {
+    cursor: not-allowed;
+    color: gray;
+}
+
+.crash-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.crash-info {
+    color: #c1c1c1;
+    position: absolute;
+    display: flex;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1650px) {
+    .crash-info {
+        font-size: 37px;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .crash-info {
+        font-size: 30px;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .crash-info {
+        font-size: 25px;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .crash-info {
+        font-size: 20px;
+        margin-left: 5%;
+    }
+}
+
+body {
+    overflow: auto;
+}
+
+.coinflip_row {
+    flex-wrap: wrap;
+}
+
+.coinflip_user_pic > img {
+    border-radius: 50%;
+}
+
+.flip {
+    width: 80px;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+}
+
+.dismiss {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .625rem;
+    z-index: 20;
+}
+
+.dismiss-button {
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: all .3s ease;
+    background: #5EB76E;
+    cursor: pointer;
+    padding: 0 15px;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+.input {
+    width: 70%;
+    height: 56px;
+    padding: 0 90px 0 22px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    transition: all .3s ease;
+    font-size: 16px;
+    color: #848484;
+}
+
+html[data-dark="true"] .input {
+    background: #2F2F34;
+}
+
+html[data-dark="true"] .window_status_buttons_single {
+    border-top: 1px solid #515151;
+}
+
+html[data-dark="true"] .window_status_buttons_single > * {
+    background: #202023;
+    border-top: 1px solid #515151;
+    cursor: pointer;
+}
+
+.window_status_buttons_single > *:first-of-type:hover {
+color: #CEB96F;
+}
+
+
+
+
+
+
+.ticket_message_sender textarea {
+      padding-top: 15px;
+}
+
+.tickets_panel_list > a > h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ticket_description ul li span {
+    word-break: break-word;
+}
+
+.ticket_message_unit p {
+    word-break: break-word;
+}
+
+.faq_answers > h3 {
+    word-break: break-word;
+}
+.bank_items .inventory_left_content {
+    margin: 15px 0 0 0;
+    justify-content: unset;
+}
+
+.avaliable .bank_item_unit {
+    margin: 0 0 10px 5px;
+}
+
+.inventory_item_description {
+    bottom: 10px;
+}
+
+.window_exchange .inventory_item_description {
+    bottom: 0px; 
+}
+
+.user-img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.active_p2p_exchange {
+    padding: 0 0 20px;
+}
+
+.withdraw_phone_field {
+    width: 100% !important;
+    position: unset !important;
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-car {
+    font-family: 'DIN Pro'!important;   
+}
+
+.users_show {
+    max-height: unset;
+    
+}
+
+
+
+.ticket_message_sender textarea {
+      width: calc(100% - 142px);
+      height: 56px;
+      background: #F2F2F2;
+      border-radius: 10px;
+      font-size: 16px;
+      color: #4C4C4E;
+      padding: 0 120px 0 22px;
+      resize: none;
+}
+
+html[data-dark="true"] .ticket_message_sender textarea {
+  background: #2F2F34;
+}
+
+
+
+
+
+
+.u_actions.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+}
+
+.u_actions {
+    position: absolute;
+    width: 149px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 53px rgba(0, 0, 0, 0.04);
+    z-index: 10;
+    border-radius: 10px;
+    left: -6px;
+    top: 55px;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+
+
+.u_actions a {
+    display: block;
+    line-height: 41px;
+    text-decoration: none;
+    transition: all .3s ease;
+    font-weight: 500;
+    font-size: 14px;
+    color: #4D4D4F;
+    padding: 0 0 0 20px;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.u_actions li:last-of-type a {
+border-bottom: none;
+}
+
+.window.mute_user {
+    width: 100%;
+    max-width: 628px;
+}
+
+.window.chat_rules, .window.cf_provably, .window.crash_provably, .window.dc_provably {
+    width: 100%;
+    max-width: 628px;
+}
+
+html[data-dark="true"] .chat_rules form, html[data-dark="true"] .cf_provably form, html[data-dark="true"] .crash_provably form, html[data-dark="true"] .dc_provably form {
+    color: white;
+}
+
+.cf_provably form, .crash_provably form, .dc_provably form {
+    word-break: break-word;
+}
+
+
+.language ul li span.eu:after, .current_language.eu:after {
+    background: url(../svg/eu.svg) no-repeat;
+    background-size: 100%;
+}
+
+.room .polish:after, .country_picker .polish:after {
+    background: url(../svg/pl.svg) no-repeat;
+    background-size: 100%;
+}
+
+.room .turkish:after, .country_picker .turkish:after {
+    background: url(../svg/tr.svg) no-repeat;
+    background-size: 100%;
+}
+
+
+
+.leftSide .emojies ul li img {
+    width: 35px;
+    height: 35px;
+}
+
+.leftSide .emojies ul {
+    height: fit-content;
+}
+
+.message_body p img {
+    width: 30px;
+    height: 30px;
+}
+
+.u_actions a:hover {
+    color: #D4594C;
+    }
+
+html[data-dark="true"] .leftSide .emojies ul, html[data-dark="true"] .u_actions {
+    background: #3f3f44;
+}
+html[data-dark="true"] .leftSide .emojies ul:after, html[data-dark="true"] .u_actions:after {
+    border-bottom: 17px solid #3f3f44;
+}
+html[data-dark="true"] .u_actions a {
+    color: #ACACB2;
+    border-bottom: 1px solid #343438;
+}
+
+html[data-dark="true"] .tos > * {
+    color: #C8C8C8;
+}
+
+.tos .support {
+    line-height: 36px;
+    text-decoration: none;
+
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #E15D51;
+    transition: all .3s ease;
+    padding: 0 19px 0 19px;
+    border-radius: 10px;
+}
+
+
+
+header .drop ul li a.coinflip_history:after {
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M22.7155 13.2862L24.9841 10.8147L25.017 11.3704C25.0609 12.1113 25.6503 12.6523 26.3922 12.6327C27.1341 12.6131 27.6576 12.0428 27.6138 11.3019L27.3944 7.59748C27.3834 7.41226 27.3724 7.22704 27.2742 7.13688C27.0668 6.77133 26.8703 6.591 26.4884 6.41556C26.3902 6.3254 26.2047 6.33029 26.0192 6.33518L22.3096 6.43303C21.9386 6.44282 21.6659 6.54277 21.4041 6.82794C21.1424 7.11311 21.0661 7.39338 21.088 7.76383C21.1319 8.50471 21.7213 9.04569 22.4632 9.02612L23.0196 9.01145L20.751 11.4829C20.2274 12.0533 20.2713 12.7941 20.8607 13.3351C21.45 13.8761 22.1919 13.8565 22.7155 13.2862Z' fill='%236A6A6A'%3e%3c/path%3e%3cpath d='M26.0919 38.7539L23.8233 41.2253L23.7904 40.6697C23.7465 39.9288 23.1572 39.3878 22.4152 39.4074C22.0443 39.4171 21.7715 39.5171 21.5098 39.8023C21.248 40.0874 21.1717 40.3677 21.1937 40.7382L21.413 44.4426C21.424 44.6278 21.435 44.813 21.5332 44.9032C21.6424 45.1786 21.9371 45.4491 22.319 45.6245C22.5045 45.6196 22.6027 45.7098 22.7882 45.7049L26.4978 45.607C27.2397 45.5875 27.7633 45.0171 27.7194 44.2762C27.6755 43.5353 27.0862 42.9944 26.3442 43.0139L25.7878 43.0286L28.0565 40.5571C28.58 39.9868 28.5361 39.2459 27.9468 38.7049C27.3574 38.1639 26.6155 38.1835 26.0919 38.7539Z' fill='%236A6A6A'%3e%3c/path%3e%3cpath d='M21.4829 22.222C26.7237 16.5126 31.2325 14.164 32.1821 14.5097L33.7537 15.9523C33.7537 15.9523 33.6663 16.0475 33.4808 16.0525C33.2078 16.1526 32.8476 16.3479 32.5747 16.4481C32.4873 16.5432 32.3017 16.5482 32.2144 16.6434C31.8541 16.8387 31.4939 17.034 31.1336 17.2293C31.0463 17.3244 31.0463 17.3244 30.8607 17.3294C30.4131 17.6199 29.9655 17.9103 29.6052 18.1056C29.5178 18.2008 29.4305 18.2959 29.2449 18.3009C28.8847 18.4962 28.6226 18.7817 28.3606 19.0672C28.2732 19.1623 28.1859 19.2575 27.913 19.3576C27.5636 19.7383 27.2033 19.9336 26.8539 20.3142C26.7666 20.4093 26.7666 20.4093 26.6792 20.5045C26.3299 20.8851 25.8822 21.1756 25.5329 21.5562C25.4455 21.6513 25.3582 21.7465 25.2708 21.8417C25.0088 22.1271 24.7467 22.4126 24.4847 22.6981C24.3974 22.7932 24.31 22.8884 24.2227 22.9835C23.8733 23.3642 23.6112 23.6496 23.2618 24.0302C22.9998 24.3157 22.6504 24.6963 22.301 25.077C22.2137 25.1721 22.1263 25.2673 22.039 25.3624C21.777 25.6479 21.5149 25.9334 21.2529 26.2188C21.1655 26.314 21.0782 26.4091 20.9908 26.5043C20.6415 26.8849 20.3903 27.3557 20.0409 27.7363L19.9536 27.8315C19.6042 28.2121 19.4404 28.5877 19.091 28.9684C19.0036 29.0635 18.9163 29.1587 18.8398 29.4391C18.5778 29.7246 18.414 30.1002 18.1519 30.3857C18.0646 30.4809 17.9772 30.576 17.9881 30.7613C17.7369 31.2321 17.4858 31.7029 17.322 32.0785C17.2346 32.1737 17.2346 32.1737 17.2455 32.359C17.0817 32.7347 16.9179 33.1103 16.7541 33.4859C16.6667 33.5811 16.6776 33.7664 16.5902 33.8615C16.4264 34.2372 16.35 34.5177 16.2735 34.7981C16.1861 34.8933 16.1861 34.8933 16.197 35.0786L14.7128 33.5408C14.2872 32.6242 16.2421 27.9313 21.4829 22.222ZM31.3054 31.2384C35.236 26.9564 41.0012 19.0984 37.858 16.2131L33.929 12.6066C30.7858 9.72131 23.449 16.1367 19.5184 20.4187C15.5878 24.7007 9.82263 32.5587 12.9658 35.4439L16.8948 39.0505C20.0381 41.9358 27.3748 35.5204 31.3054 31.2384Z' fill='%236A6A6A'%3e%3c/path%3e%3c/svg%3e");
+          }
+          
+html[data-dark="true"] .tickets_panel_top ul {
+    
+    background: #222226;
+
+}    
+
+.chat_pause {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.u_actions {
+    z-index: 301;
+}
+
+.coinflip_unit_provably {
+    
+    cursor: pointer;
+}
+
+.cf_pf {
+    z-index: 100;
+}
+
+.coinflip_unit_provably:hover {
+    color: #4C8BD4!important;
+}
+
+.window_status > p {
+
+text-transform: unset;
+}
+
+html[data-dark="true"] .bank_items .empty_item {
+    opacity: 0.1;
+}
+
+.bet_event_middle span.live {
+    cursor: pointer;   
+}
+
+.betting_event_unit.finished {
+    opacity: .75   
+}
+
+.crash-history  li {
+    cursor: pointer;
+}
+
+.window_status {
+    height: fit-content!important;
+    padding-bottom: 70px;
+}
+
+
+#cf_pf_eos {
+    color: #4C8BD4;
+    text-decoration: none;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.roulette_hidden {
+      visibility: hidden;
+      max-height: 0;
+      min-height: 0;
+      overflow: hidden;
+    }
+
+html[data-dark="true"] .rolling .roulette {
+    background-image: url("../images/roulette/numse317.png?v=22992");
+}
+.rolling .roulette {
+
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 18px 0 0 0;
+    background-image: url("../images/roulette/numsb40a.png?v=222992");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+}
+
+.ticket_message_unit p {
+    white-space: pre-wrap;
+}
+
+.dice_result_lose:before {
+    background: #E96253!important;
+}
+.dice_result_win:before {
+    background: #66CA78!important;
+}
+.betting_event_unit {
+    cursor: pointer;
+}
+
+.payway_megafon {
+    background: #FBFBFB url(../svg/megafon.svg) 50% no-repeat;
+}
+  .payway_megafon {
+    background-size: 145px !important;
+  }
+  
+html[data-dark="true"] .payway_megafon {
+  background: #222225 url(../svg/megafon.svg) 50% no-repeat;
+}
+
+.payway_alipay {
+    background: #FBFBFB url(../svg/alipay.svg) 50% no-repeat;
+}
+  .payway_alipay {
+    background-size: 145px !important;
+  }
+  
+html[data-dark="true"] .payway_alipay {
+  background: #222225 url(../svg/alipay_dark.svg) 50% no-repeat;
+}
+
+.payway_boleto {
+    background: #FBFBFB url(../svg/boleto.svg) 50% no-repeat;
+}
+  .payway_boleto {
+    background-size: 145px !important;
+  }
+  
+html[data-dark="true"] .payway_boleto {
+  background: #222225 url(../svg/boleto.svg) 50% no-repeat;
+}
+
+.payway_advcash {
+    background: #FBFBFB url(../svg/advcash.svg) 50% no-repeat;
+}
+  .payway_advcash {
+    background-size: 145px !important;
+  }
+  
+html[data-dark="true"] .payway_advcash {
+  background: #222225 url(../svg/advcash.svg) 50% no-repeat;
+}
